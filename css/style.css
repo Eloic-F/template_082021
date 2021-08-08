@@ -6,14 +6,6 @@
     opacity: 1;
   }
 }
-@keyframes welcome {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes envoi {
   0% {
     transform: translateX(-100%);
@@ -87,7 +79,7 @@ main {
   }
 }
 
-.section-1, .section-2, .section-3 {
+section {
   animation: sectionAppear 700ms ease-in-out 500ms backwards;
 }
 
@@ -202,22 +194,6 @@ nav li:hover {
   #accueil .img-container img {
     width: 100%;
   }
-}
-
-#shadow::before {
-  content: "LOADER";
-  text-align: center;
-  line-height: 90vh;
-  font-size: 40pt;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: white;
-  z-index: -10;
-  opacity: 0;
-  animation: loader 3000ms ease-in-out;
 }
 
 .section-3 {

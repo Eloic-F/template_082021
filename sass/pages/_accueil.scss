@@ -20,19 +20,3 @@
     }
   }
 }
-
-#shadow::before {
-  content: "LOADER";
-  text-align: center;
-  line-height: 90vh;
-  font-size: 40pt;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: white;
-  z-index: -10;
-  opacity: 0;
-  animation: loader 3000ms ease-in-out;
-}
