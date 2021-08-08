@@ -1,0 +1,43 @@
+.section-3{
+    flex: 4;
+    background-color: rgb(240, 186, 125);
+    padding: 1em;
+    text-align: justify;
+    & p{
+      font-size: 14pt;
+      line-height: 28px;
+      flex: 1;
+      @include responsive(m){
+        font-size: 12pt;
+        line-height: inherit;
+      }
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        height: 90%;
+        @include responsive(lm){
+          gap: 0;
+          flex-direction: column;
+          overflow: auto;
+        }
+        @include responsive(s){
+          overflow: inherit;
+        }
+    }
+    &__image{
+      margin: 0;
+      flex: 1;
+        & img{
+          width: 100%;
+        }
+        & figcaption{
+          text-align: center;
+          background-color: violet;
+          @include responsive(s){
+            font-size: 8pt;
+          }
+        }
+    }
+  }

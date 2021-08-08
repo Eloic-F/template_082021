@@ -1,0 +1,66 @@
+@keyframes sectionAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes welcome {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes envoi {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+
+@keyframes envoiS {
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(100%);
+  }
+}
+
+@keyframes loader {
+  0%{
+    background-color: darken($color: #ffffff, $amount: 0);
+    z-index: 1;
+    opacity: 1;
+    color: white;
+  }
+  65%{
+    z-index: 1;
+    opacity: 1;
+    color: rgb(76, 167, 76);
+    background-color: darken($color: #ffffff, $amount: 100);
+  }
+  70%{
+    z-index: 1;
+    opacity: 1;
+    color: rgb(76, 167, 76);
+    background-color: darken($color: #ffffff, $amount: 100);
+  }
+  75%{
+    z-index: 1;
+    opacity: 1;
+    background-color: darken($color: #ffffff, $amount: 100);
+  }
+  100%{
+    z-index: 1;
+    opacity: 0;
+    background-color: darken($color: #ffffff, $amount: 100);
+  }
+}

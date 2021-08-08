@@ -1,0 +1,37 @@
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(223, 135, 104, 0.181);
+  padding: 1em;
+  flex: 4;
+}
+
+.download {
+  position: absolute;
+  top: 1em;
+  text-align: center;
+  @include responsive(m){
+    position: relative;
+    margin-top: 1em;
+    padding-bottom: 2em;
+  }
+  & input {
+    width: 300px;
+    height: 40px;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: rgb(85, 177, 60);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    @include responsive(m){
+        width: 50%;
+        overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &:active {
+      background-color: darken($color: rgb(85, 177, 60), $amount: 10);
+    }
+  }
+}

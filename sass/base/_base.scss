@@ -1,0 +1,26 @@
+body {
+  margin: 0 auto;
+  font-family: "Andada Pro", serif;
+  max-width: 2400px;
+  & h1 {
+    margin: 0;
+    text-align: center;
+    @include responsive(s) {
+      font-size: 14pt;
+    }
+  }
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  @include responsive(m) {
+    flex-direction: column;
+    height: 100vh;
+    flex: inherit;
+  }
+}
+
+.section-1, .section-2, .section-3 {
+  animation: sectionAppear 700ms ease-in-out 500ms backwards;
+}

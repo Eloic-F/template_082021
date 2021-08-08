@@ -1,0 +1,48 @@
+.section-2 {
+  background-color: rgb(0, 0, 0);
+  flex: 4;
+  padding: 1em;
+  color: white;
+  & .titre-medium {
+    display: none;
+    @include responsive(lm) {
+      display: inherit;
+    }
+  }
+  & .titre-large {
+    @include responsive(lm) {
+      display: none;
+    }
+  }
+}
+
+.carousel {
+  margin-top: 1em;
+  display: flex;
+  gap: 3em;
+  overflow: auto;
+  @include responsive(lm) {
+    padding: 0;
+  }
+  &__item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all 500ms ease-in-out;
+    &:hover {
+      filter: grayscale(0%);
+    }
+    & img {
+      width: 100%;
+      @include responsive(s) {
+        width: 100vw;
+      }
+    }
+    & figcaption {
+      text-align: center;
+    }
+  }
+}
